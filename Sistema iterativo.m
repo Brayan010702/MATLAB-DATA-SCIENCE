@@ -14,9 +14,9 @@ x(n) = y(n)/U(n,n);
 for j = n-1:-1:1
     x(j) = (y(j)-U(j,j+1)*x(j+1))/U(j,j);
 end
-disp('La solución aproximada de Ax=b es:');
+disp('La soluciÃ³n aproximada de Ax=b es:');
 disp(x);
 disp('');
 xx = A\b;
-disp('La solución exacta de Ax=b es:');
+disp('La soluciÃ³n exacta de Ax=b es:');
 disp(xx)
