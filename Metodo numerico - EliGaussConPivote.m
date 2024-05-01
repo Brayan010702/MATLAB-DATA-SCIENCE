@@ -5,7 +5,7 @@ clc, clear
 fprintf('ELIMINACION GAUSSIANA CON PIVOTEO PARCIAL\n\n\n');
 A = input('Ingrese la matriz A = \n');
 b = input('\nIngrese el vector b, correspondite a los terminos independientes b=\n');
-%permite obtener el tamaño de la matriz A
+%permite obtener el tamaÃ±o de la matriz A
 [n,m] = size(A);
 C = [A,b]; % C representa la forma de la matriz aumentada [A b]
 
