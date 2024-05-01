@@ -25,7 +25,7 @@ while 1
     end
     contador = contador+1;
     if(contador > it_lim)
-         fprintf('Se excedió límite de iteraciones.\n');
+         fprintf('Se excediÃ³ lÃ­mite de iteraciones.\n');
          break
     end
     x0 = xnew;
