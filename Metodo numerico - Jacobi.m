@@ -10,9 +10,9 @@ fprintf('                           METODO ITERATIVO DE JACOBI\n\n\n')
 
 %input es un comando de solicitud de entrada de datos del usuario.
 % a=input('Ingrese la matriz de coeficientes:\n ');
-% b=input('\nIngrese los términos independientes:\n ');
+% b=input('\nIngrese los tÃ©rminos independientes:\n ');
 % x=input('\nIngrese el vector con las aproximacimaciones Iniciales:\n ');
-% iter=input('\nIngrese el número máximo de iteraciones:\n ');
+% iter=input('\nIngrese el nÃºmero mÃ¡ximo de iteraciones:\n ');
 % tol=input('\nIngrese la tolerancia:\n ');
 
 a = [1 2 3 4;5 6 7 8;0 1 2 4;1 9 7 5];
@@ -28,7 +28,7 @@ disp(cond)
 % la funcion disp nos permite imprimir una variable en el espacio de trabajo
 determinante=det(a);%se calcula el determinante de la matriz de coeficiente
 if determinante==0
-disp('El determinante es cero, el problema no tiene solución única')
+disp('El determinante es cero, el problema no tiene soluciÃ³n Ãºnica')
 return
 end
 
@@ -44,7 +44,7 @@ re=max(abs(eig(T))) %calculo del radio espectral
 
 if re>1
    disp('Radio Espectral mayor que 1')
-   disp('el método no converge')
+   disp('el mÃ©todo no converge')
    return
 end
 fprintf('\nEl vector constante es::\n')
