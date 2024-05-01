@@ -10,9 +10,9 @@ fprintf('                           METODO ITERATIVO DE GAUSS SEIDEL\n\n\n')
 
 %input es un comando de solicitud de entrada de datos del usuario.
 a=input('Ingrese la matriz de coeficientes:\n ');
-b=input('\nIngrese los términos independientes:\n ');
+b=input('\nIngrese los tÃ©rminos independientes:\n ');
 x=input('\nIngrese el vector con las aproximacimaciones Iniciales:\n ');
-iter=input('\nIngrese el número máximo de iteraciones:\n ');
+iter=input('\nIngrese el nÃºmero mÃ¡ximo de iteraciones:\n ');
 tol=input('\nIngrese la tolerancia:\n ');
 
 k=norm(a)*norm(a^-1);%Se calcula el condicional de la matriz de coeficientes
@@ -21,7 +21,7 @@ disp(k)
 % la funcion disp nos permite imprimir una variable en el espacio de trabajo
 determinante=det(a);%se calcula el determinante de la matriz de coeficiente
 if determinante==0
-disp('El determinante es cero, el problema no tiene solución única')
+disp('El determinante es cero, el problema no tiene soluciÃ³n Ãºnica')
 end
 
 n=length(b); %numero de elementos del vector b
@@ -37,7 +37,7 @@ re=max(abs(eig(T))) %calculo del radio espectral
 
 if re>1
 disp('Radio Espectral mayor que 1')
-disp('el método no converge')
+disp('el mÃ©todo no converge')
 
 return
 end
