@@ -1,6 +1,6 @@
 % Metodo de Muller
 function[xr, T]=muller(f,xr,h,c,e)
-% Crear función a partir del parametro texto 
+% Crear funciÃ³n a partir del parametro texto 
 fx=inline(f);
 % Crear los 3 puntos a partir del parametro 
 x2=xr;
@@ -22,9 +22,9 @@ while(sigue)
     a=(d1-d0)/(h1+h0);
     b=a*h1+d1;
     c=fx(x2);
-    % Obtener la raiz de la ecuación general
+    % Obtener la raiz de la ecuaciÃ³n general
     raizd=sqrt(b*b-4*a*c);
-    % Determinar el valor más grande 
+    % Determinar el valor mÃ¡s grande 
     if abs(b+raizd)>abs(b-raizd)
         den=b+raizd;
     else
